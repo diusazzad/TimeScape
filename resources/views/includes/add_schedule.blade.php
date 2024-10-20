@@ -9,7 +9,7 @@
             </div>
             <h4 class="modal-title"><b>Add Schedule</b></h4>
             <div class="modal-body text-left">
-                <form class="form-horizontal" method="POST" action="{{ route('schedule.store') }}">
+                <form class="form-horizontal" method="POST" action="">
                     @csrf
                     <div class="form-group">
                         <label for="name" class="col-sm-3 control-label">Name</label>

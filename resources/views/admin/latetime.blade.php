@@ -34,8 +34,9 @@
 
                 <div class="table-rep-plugin">
                     <div class="table-responsive mb-0" data-pattern="priority-columns">
-                        <table id="datatable-buttons" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                        
+                        <table id="datatable-buttons" class="table table-striped table-bordered dt-responsive nowrap"
+                            style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+
                             <thead>
                                 <tr>
                                     <th data-priority="1">Date</th>
@@ -49,18 +50,16 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($latetimes as $latetime)
 
                                 <tr>
-                                    <td>{{ $latetime->latetime_date }}</td>
-                                    <td>{{ $latetime->emp_id }}</td>
-                                    <td>{{ $latetime->employee->name }}</td>
-                                    <td>{{ $latetime->duration }}</td>
-                                    <td>{{ $latetime->employee->schedules->first()->time_in }} </td>
-                                    <td>{{ $latetime->employee->schedules->first()->time_out }}</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td> </td>
+                                    <td></td>
                                 </tr>
 
-                                @endforeach
 
 
                             </tbody>

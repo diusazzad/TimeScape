@@ -9,7 +9,7 @@
             </div>
             <h4 class="modal-title"><b><span class="employee_id">Edit Employee</span></b></h4>
             <div class="modal-body text-left">
-                <form class="form-horizontal" method="POST" action="{{ route('employees.update', $employee->name) }}">
+                <form class="form-horizontal" method="POST" action="">
                     @csrf
                     <input type="hidden" name="_method" value="PUT">
                     <div class="form-group">
@@ -44,10 +44,9 @@
 
                         <select class="form-control" id="schedule" name="schedule" required>
                             <option value="" selected>- Select -</option>
-                            @foreach ($schedules as $schedule)
-                                <option value="{{ $schedule->slug }}">{{ $schedule->slug }} -> from
-                                    {{ $schedule->time_in }} to {{ $schedule->time_out }} </option>
-                            @endforeach
+                            
+                                <option value="{{ $schedule->slug }}"></option>
+                 
 
                         </select>
 
@@ -66,7 +65,7 @@
 </div>
 
 <!-- Delete -->
-<div class="modal fade" id="delete{{ $employee->name }}">
+<div class="modal fade" id="delete">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header " style="align-items: center">
@@ -75,7 +74,7 @@
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
-                <form class="form-horizontal" method="POST" action="{{ route('employees.destroy', $employee->name) }}">
+                <form class="form-horizontal" method="POST" action="">
                     @csrf
                     {{ method_field('DELETE') }}
                     <div class="text-center">

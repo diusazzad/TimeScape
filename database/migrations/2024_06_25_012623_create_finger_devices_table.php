@@ -12,8 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('finger_devices', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->id(); // Creates an auto-incrementing integer primary key
+            $table->timestamps(); // Creates `created_at` and `updated_at` timestamps
         });
     }
 

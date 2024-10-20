@@ -1,5 +1,5 @@
 <!-- Edit -->
-<div class="modal fade" id="edit{{ $schedule->slug }}">
+<div class="modal fade" id="edit">
     <div class=" modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -9,7 +9,7 @@
             </div>
             <h4 class="modal-title"><b>Update Schedule</b></h4>
             <div class="modal-body text-left">
-                <form class="form-horizontal" method="POST" action="{{ route('schedule.update', $schedule->slug) }}">
+                <form class="form-horizontal" method="" action="">
                     @csrf
                     <input type="hidden" name="_method" value="PUT">
 
@@ -56,7 +56,7 @@
 </div>
 
 <!-- Delete -->
-<div class="modal fade" id="delete{{ $schedule->slug }}">
+<div class="modal fade" id="delete">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header " style="align-items: center">

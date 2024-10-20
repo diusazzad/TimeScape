@@ -13,20 +13,20 @@
 
                 <div class="card-body text-left">
 
-                    <form method="POST" action="{{ route('employees.store') }}">
+                    <form method="POST" action="">
                         @csrf
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" class="form-control" placeholder="Enter Employee Name" id="name" name="name"
-                                required />
+                            <input type="text" class="form-control" placeholder="Enter Employee Name" id="name"
+                                name="name" required />
                         </div>
                         <div class="form-group">
                             <label for="position">Position</label>
-                            <input type="text" class="form-control" placeholder="Enter Employee Name" id="position" name="position"
-                                required />
+                            <input type="text" class="form-control" placeholder="Enter Employee Name" id="position"
+                                name="position" required />
                         </div>
 
-                        
+
                         <div class="form-group">
                             <label for="email" class="col-sm-3 control-label">Email</label>
 
@@ -40,10 +40,8 @@
 
                             <select class="form-control" id="schedule" name="schedule" required>
                                 <option value="" selected>- Select -</option>
-                                @foreach($schedules as $schedule)
-                                <option value="{{$schedule->slug}}">{{$schedule->slug}} -> from {{$schedule->time_in}}
-                                    to {{$schedule->time_out}} </option>
-                                @endforeach
+                                <option value="">
+                                </option>
 
                             </select>
 

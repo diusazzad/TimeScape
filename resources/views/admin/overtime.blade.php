@@ -49,18 +49,17 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($overtimes as $overtime)
-
+                                 
                                         <tr>
-                                            <td>{{ $overtime->overtime_date }}</td>
-                                            <td>{{ $overtime->emp_id }}</td>
-                                            <td>{{ $overtime->employee->name }}</td>
-                                            <td>{{ $overtime->duration }} </td>
-                                            <td>{{ $overtime->employee->schedules->first()->time_in }} </td>
-                                            <td>{{ $overtime->employee->schedules->first()->time_out }}</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
 
-                                    @endforeach
+                                   
 
                                 </tbody>
                             </table>
